@@ -217,6 +217,48 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.privacy {
+  display: flex;
+  justify-content: center;
+}
+
+.privacy__input:checked + .privacy__label .privacy__icon {
+  border-color: transparent;
+  background-color: #2196F3;
+}
+
+.privacy__label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: #757575;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.privacy__icon {
+  display: block;
+  border: 2px solid #212121;
+  fill: #FFFFFF;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy__text {
+  display: block;
+  margin-left: 7px;
+}
+
+.privacy__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
