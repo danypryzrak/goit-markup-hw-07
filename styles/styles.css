@@ -1,4 +1,4 @@
-:root {
+  :root {
     --brand-color: #2196F3;
     --discription: #757575;
     --dark-font: #2F303A;
@@ -6,37 +6,36 @@
     --gray-font: #F5F4FA;
     --balck: #212121;
     --team-social-link: #AFB1B8;
- 
-}
+} 
 
 
 
 
 /* body */
-body{
+ body{
     font-family: 'Roboto', sans-serif;
     background: var(--white);
-}
+} 
 
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
-}
+} 
 
-.container{ 
+ .container{ 
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-}
+} 
 
-.section{
+ .section{
 padding: 94px 0;
-}
+} 
 
-h1,h2,h3,h4,p{
+ h1,h2,h3,h4,p{
     margin: 0;
-}
+} 
 
 .visually-hidden {
     position: absolute;
@@ -49,73 +48,88 @@ h1,h2,h3,h4,p{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
+} 
 
-img{
-    display: block;
-}
 
-.button {
+
+ .button {
 
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+    line-height: calc(30/16);
     letter-spacing: 0.06em;
+
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
     color: var(--white);
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: 0;
-    padding: 10px 32px;
-    margin-top: 30px;
+    border: none;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} 
 
 .button:hover,
 .button:focus {
     background-color: #188CE8;
     cursor: pointer;
+} 
+
+/* Ссылки на соц */
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
+.social__link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
+    color: var(--team-social-link);
+
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: var(--brand-color);
+    color: var(--white);
+} */
+
+.social__icon {
+    fill: currentColor;
+} 
 
 
-
-/* header */ 
-.page-header{
+/*_______ !!header!! _______*/ 
+ .header{
     border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: #ECECEC;
 }
 
-.container--header{
+.header__container{
     display: flex;
     align-items: center;
     
-}
+} 
 
-.logo{
-    font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/26);
-        color: #000000;
-        padding: 24px 0;
-
-        
-    
-        letter-spacing: 0.03em;
-        text-decoration: none
-        
-}
-.logo__web{
-    color: var(--brand-color);
-
-}
- 
- 
 /* Навигация на другие страницы */
+
 .nav{
     display: flex;
     margin-left: 92px;
@@ -181,7 +195,7 @@ img{
      position: absolute;
      bottom: -1px;
      left: 0;
-}
+} 
  
 /* Контакты */
  
@@ -189,8 +203,7 @@ img{
     display: flex;
     margin-left: auto;
 }
- 
- 
+  
 .contacts__item:not(:first-child){
     margin-left: 50px;
 }
@@ -217,15 +230,16 @@ img{
     color: var(--brand-color);
     fill: var(--brand-color);
     
-}
+} 
 
+/*_______ !!header!! _______*/
 
-/* !!Main!! */
+/*_______ !!Main!! _______*/
 
 
 /* Герой */
 
-.section--hero {    
+.hero{    
     padding: 200px 0 ;
     max-width: 1600px;
     margin: 0 auto;
@@ -237,7 +251,7 @@ img{
 
 }
 
-.hero{
+.hero__container{
     text-align: center;
 }
 
@@ -255,11 +269,15 @@ width: 696px;
     text-transform: uppercase;
 
     color: var(--white);
-}
+} 
+
+ .hero__button{
+    margin-top: 30px;
+} 
 
 /* Преимущества */
 
-.benefits{
+ .benefits__list{
     display: flex;
     gap: 30px;
 }
@@ -297,11 +315,11 @@ background: #F5F4FA;
     letter-spacing: 0.03em;
     color: var(--discription);
     margin-top: 10px;
-}
+} 
         
   /* Чем мы занимаемся */
 
-.mission{
+ .mission{
     padding-bottom: 94px;
 }
 
@@ -349,10 +367,11 @@ background: #F5F4FA;
         text-transform: uppercase;
     
         color: var(--white);
-}
+} 
 
 /* Наша команда */
-.section--team{
+
+.team{
     background: var(--gray-font);
     text-align: center;
 }
@@ -375,7 +394,6 @@ font-size: 36px;
 .team__item{
     background: #FFFFFF;
     flex-basis: 270px;
-        /* material shadow v1 */
     
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
@@ -400,38 +418,10 @@ font-size: 36px;
     margin-top: 10px;
 }
 
-/* Ссылки на соц */
-
-.social{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.team-card__social{
     margin-top: 16px;
-}
+} 
 
-.social__link {
-    display: flex;
-    height: 44px;
-    width: 44px;
-    justify-content: center;
-    align-items: center;
-    color: var(--team-social-link);
-
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.social__link:hover,
-.social__link:focus{
-    background-color: var(--brand-color);
-    color: var(--white);
-}
-
-.social__icon{
-    fill: currentColor;
-}
 
 /* Партнёры */
 
@@ -484,14 +474,14 @@ border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     fill: currentColor;
   
-}
+} 
+
+/*_______ !!Main!! _______*/
 
 
+/*______ !!Footer!! ______*/
 
-
-/* Попка сайта */
-
-.section--footer{
+ .section--footer{
     background: var(--dark-font);
     align-self: baseline;
    
@@ -537,15 +527,14 @@ margin-top: 9px;
 
 .address__link--white{
     color: var(--white);
-}
+} 
 
 
-/* Social */
+ /* Footer Social */
+
 
 .footer-social{
     margin-left: 70px;
-  
-    
 }
 
 .footer-social__tittle{
@@ -559,30 +548,13 @@ margin-top: 9px;
 }
 
 .footer-social__list{
-    display: flex;
-    width: 206px;
     margin-top: 20px;
-    gap: 10px;
 }
 
 .footer-social__link{
-    display:block;
-    padding:12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social__link:hover,   
-.footer-social__link:focus{
-background-color: var(--brand-color)
-}
-
-
-.footer-social__icon{
-    display: block;
-    fill: var(--white);
-}
+color: var(--white);
+background-color: rgba(255, 255, 255, 0.1);;
+} 
 
 
 /* Footer Form */
@@ -606,11 +578,9 @@ background-color: var(--brand-color)
     margin-top: 20px;
 }
 
-
 .subscribe__form{
  display: flex;
 }
-
 
 .subscribe__input{
     width: 358px;
@@ -630,39 +600,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .subscribe__button{
-    display: inline-flex;
-     gap: 10px;
-     justify-content: center;
-     align-items: center;
+margin-left: 12px;
+} 
 
-    width: 200px;
-    margin-left: 12px;
+/*______ !!Footer!! ______*/
 
-    background: var(--brand-color);
-    color: var(--white);
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    font-weight: 700;
-    
-        line-height: calc(30/16);
-        letter-spacing: 0.06em;
-            
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-           
-}
-
-.subscribe__button:hover,
-.subscribe__button:focus{
-    background-color: #188CE8;
-        cursor: pointer;
-        
-}
-
-
-/* !!Modal!! */
+/*___ !!Modal!! ___*/
 
 .backdrop{
     position:fixed;
@@ -731,39 +674,38 @@ font-weight: 700;
     letter-spacing: 0.03em;
 
     color: var(--balck);
-}
+} 
 
 /* Forms */
 
 .recall{
     margin-top: 12px;
-}
-
-
-.recall__box{
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-bottom: 10px;
-}
+    justify-content: center;
+    align-items: center;
 
-.recall__box:nth-child(4){
-    margin-bottom: 20px;
 }
 
 .recall__label{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     color: var(--discription);
     font-weight: 400;
         font-size: 12px;
         line-height: calc(14/12);
-        /* identical to box height */
-    
         letter-spacing: 0.01em;
-        
+
+}
+
+.recall__label:not(:first-child) {
+    margin-top: 10px;
 }
 
 .recall__input{
-    width: auto;
+    
+    width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -790,6 +732,7 @@ font-weight: 700;
 }
 
 .recall__comment{
+    width: 448px;
     height: 120px;
     margin-top: 4px;
     padding: 12px 16px;
@@ -808,6 +751,14 @@ font-weight: 700;
     border-color: var(--brand-color);
     outline: none;
 }
+
+.recall__button {
+    margin-top: 20px;
+    display: inline-block;
+} 
+
+
+/* privacy */
 
 .privacy{
     display: flex;
@@ -830,6 +781,7 @@ font-weight: 700;
     color: var(--discription);
     cursor: pointer;
 
+    margin-top: 20px;
 
 }
 
@@ -845,7 +797,7 @@ font-weight: 700;
 
 }
 
-.privacy-text {
+.privacy__text {
     display: block;
     margin-left: 7px;
 }
@@ -859,47 +811,16 @@ font-weight: 700;
        
     
         color: #2196F3;
-}
+} 
 
-/* modal submit button */
-
-.recall__button-box{
-    padding-left: 124px;
-    margin-top: 32px;
-}
-
-.recall__button{
-    width: 200px;
-    height: 50px;
-    background-color: var(--brand-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        border: 0;
-
-    font-size: 16px;
-        font-weight: 700;
-        line-height: calc(30/16);
-        letter-spacing: 0.06em;
-        color: var(--white);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
-
-.recall__button:hover,
-.recall__button:focus{
- background: #188CE8;
- cursor: pointer;
-}
- 
+/*___ !!Modal!! ___*/
 
  
-
-
-/* !!Portfolio!! */
+/*___ !!Portfolio!! ___*/
 
 /* Фильтры */
 
-.filter{
+ .filter{
     display: flex;
     justify-content: center;
     
@@ -935,7 +856,7 @@ font-weight: 700;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
     
-}
+} 
 
 /* Проэкты */
 
@@ -1020,4 +941,6 @@ font-weight: 700;
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: var(--discription);
-}
+} 
+
+/*___ !!Portfolio!! ___ */

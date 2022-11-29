@@ -1,0 +1,26 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+@import "./base/base";
+@import "./base/reset";
+
+@import "./components/components";
+@import "./components/social-list.scss";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/address";
+@import "./components/modal";
+@import "./components/filter-btn";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/benefits";
+@import "./layout/mission";
+@import "./layout/team";
+@import "./layout/_partners.scss";
+@import "./layout/footer";
+@import "./layout/recall";
+@import "./layout/projects"
+
+
+

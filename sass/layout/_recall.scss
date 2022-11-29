@@ -1,0 +1,78 @@
+.recall {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.recall__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: $discription;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+
+    &:not(:first-child){
+        margin-top: 10px;
+    }
+
+}
+
+.recall__input {
+
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 41px;
+    margin-top: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus{
+        border-color: $brand-color;
+            outline: none;
+    }
+
+    &:focus + .recall__icon{
+        fill: $brand-color;
+    }
+}
+
+.recall__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.recall__comment {
+    width: 448px;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus{
+        border-color: $brand-color;
+            outline: none;
+    }
+}
+
+.recall__button {
+    margin-top: 20px;
+    display: inline-block;
+}
