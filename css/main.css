@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -259,18 +258,6 @@ p {
   color: #2196F3;
 }
 
-.header {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
-/* Навигация на другие страницы */
 .nav {
   display: flex;
   margin-left: 92px;
@@ -327,7 +314,6 @@ p {
   left: 0;
 }
 
-/* Контакты */
 .contacts {
   display: flex;
   margin-left: auto;
@@ -354,6 +340,17 @@ p {
 .contacts__link:hover, .contacts__link:focus {
   color: #2196F3;
   fill: #2196F3;
+}
+
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ECECEC;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .hero {
