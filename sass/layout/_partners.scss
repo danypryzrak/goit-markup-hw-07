@@ -1,5 +1,6 @@
-.section--partners {
+.partners {
     text-align: center;
+    @include section();
 }
 
 .partners__tittle {

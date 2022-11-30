@@ -1,6 +1,7 @@
 .team {
     background: $gray-font;
     text-align: center;
+    @include section();
 }
 
 .team__tittle {

@@ -1,6 +1,7 @@
 .footer {
     background: $dark-font;
     align-self: baseline;
+    @include section();
 }
 
 .footer__container {
